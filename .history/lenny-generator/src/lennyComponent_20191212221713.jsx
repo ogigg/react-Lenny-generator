@@ -13,14 +13,10 @@ class Lenny extends Component {
             horizontal: 'center',
           };
     }
-    componentDidMount=()=>{
-        this.props.enqueueSnackbar('Kliknij na lenny face aby skopiować!',{anchorOrigin: {vertical: 'top',horizontal: 'center',}});
-    }
     //enqueueSnackbar = useSnackbar();
     handleClick=()=>{
         this.copyToClipboard();
-        this.props.enqueueSnackbar('Skopiowano!',{variant: 'success',},
-        {anchorOrigin: {vertical: 'top',horizontal: 'right',}});
+        this.props.enqueueSnackbar('Skopiowano!', 'success');
     }
 
     copyToClipboard = () =>{
@@ -36,16 +32,20 @@ class Lenny extends Component {
     }
   render() {
     return(
+        <SnackbarProvider maxSnack={3}>
         <div className="lenny-wrapper">
             <div className="lenny" onClick={this.handleClick}>
                 
                 {this.props.lenny}
             </div>
         </div>
+        </SnackbarProvider>
     );
   }
 }
 
 
-export default withSnackbar(Lenny); 
+
+
+export default Lenny; // Don’t forget to use export default!
 

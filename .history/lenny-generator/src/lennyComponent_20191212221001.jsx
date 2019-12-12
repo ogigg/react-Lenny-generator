@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './lennyComponent.css'
 import Snackbar from '@material-ui/core/Snackbar';
 import { SnackbarProvider, useSnackbar } from 'notistack';
-import { withSnackbar } from 'notistack';
+
 
 class Lenny extends Component {
     constructor(props) {
@@ -13,14 +13,10 @@ class Lenny extends Component {
             horizontal: 'center',
           };
     }
-    componentDidMount=()=>{
-        this.props.enqueueSnackbar('Kliknij na lenny face aby skopiować!',{anchorOrigin: {vertical: 'top',horizontal: 'center',}});
-    }
-    //enqueueSnackbar = useSnackbar();
+
     handleClick=()=>{
         this.copyToClipboard();
-        this.props.enqueueSnackbar('Skopiowano!',{variant: 'success',},
-        {anchorOrigin: {vertical: 'top',horizontal: 'right',}});
+        enqueueSnackbar('This is a success message!', 'success');
     }
 
     copyToClipboard = () =>{
@@ -36,16 +32,29 @@ class Lenny extends Component {
     }
   render() {
     return(
+        <div>
         <div className="lenny-wrapper">
             <div className="lenny" onClick={this.handleClick}>
                 
                 {this.props.lenny}
             </div>
         </div>
+         <Snackbar
+         key={`${this.state.vertical},${this.state.horizontal}`}
+         open={this.state.open}
+        //  onClose={handleClose}
+         ContentProps={{
+           'aria-describedby': 'message-id',
+         }}
+         message={<span id="message-id">Skopiowano!</span>}
+       />
+       </div>
     );
   }
 }
 
 
-export default withSnackbar(Lenny); 
+
+
+export default Lenny; // Don’t forget to use export default!
 

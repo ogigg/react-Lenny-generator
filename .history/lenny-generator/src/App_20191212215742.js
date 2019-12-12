@@ -6,7 +6,6 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
-import { SnackbarProvider, useSnackbar } from 'notistack';
 
 class App extends Component {
   constructor(props) {
@@ -20,10 +19,10 @@ class App extends Component {
     };
   }
 
-  lennyMouthList = [' ഌ',' ͜ʖ','  ͟ʖ','v',' ෴','o','_','-,-','+','*','Ꮂ','⏏','‿','‿‿','Д','ʖ̯',]
-  lennyEyesList = ['*.*',' ͡°. ͡°','°.°','ಠ.ಠ','•.•','｡•.•｡','＾.＾','^.^','ﾟ.ﾟ',' ͡€. ͡€','｡◕.◕｡']
-  lennyHandsList = ['.','\\./','-.-','>=.=<','~.~','/./','づ.づ','[̲̅$̲̅(̲̅.)̲̅$̲̅]','ᕦ.ᕥ','乁.ㄏ','٩.۶','ლ.ლ','.つ──☆*:・ﾟ','¯\\_._/¯','ᕦ.ᕤ']
-  lennyOuterList = ['.','[.]','q.p','(.)','<.>','!.!','|.|','ᔑ.ᔐ']
+  lennyMouthList = [' ഌ',' ͜ʖ','  ͟ʖ','v',' ෴','o','_','-,-','+','*']
+  lennyEyesList = ['*.*',' ͡°. ͡°','°.°','ಠ.ಠ']
+  lennyHandsList = ['.','\\./','-.-','>=.=<','~.~','/./','づ.づ']
+  lennyOuterList = ['.','[.]','q.p','(.)','<.>','!.!']
 
 
 
@@ -55,13 +54,11 @@ class App extends Component {
 
   render(){
   return (
-    <div>
-      <SnackbarProvider maxSnack={5} anchorOrigin={{vertical: 'top',horizontal: 'right',}} autoHideDuration='800'>
+    <div>  
       <Lenny lenny={this.state.lennyFace}/>
-      </SnackbarProvider>  
       <div className="menu-wrapper">
         <Grid container spacing={1} alignItems={'center'}>
-          <Grid container item spacing={1}>
+          <Grid container item spacing={3}>
             <Grid item xs={3}>
               <Paper className="menu-label" >Usta</Paper>
             </Grid>
@@ -78,7 +75,7 @@ class App extends Component {
               </Paper>
             </Grid>
           </Grid>
-          <Grid container item spacing={1}>
+          <Grid container item spacing={3}>
             <Grid item xs={3}>
               <Paper className="menu-label" >Oczy</Paper>
             </Grid>
@@ -95,7 +92,7 @@ class App extends Component {
               </Paper>
             </Grid>
           </Grid>
-          <Grid container item spacing={1}>
+          <Grid container item spacing={0.5}>
             <Grid item xs={3}>
               <Paper className="menu-label">Uszy</Paper>
             </Grid>
@@ -112,7 +109,7 @@ class App extends Component {
               </Paper>
             </Grid>
           </Grid>
-          <Grid container item spacing={1}>
+          <Grid container item spacing={3}>
             <Grid item xs={3}>
               <Paper className="menu-label">Ręce</Paper>
             </Grid>
@@ -131,7 +128,6 @@ class App extends Component {
           </Grid>
         </Grid> 
       </div>
-      
     </div>
 
   );

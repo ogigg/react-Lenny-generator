@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import './lennyComponent.css'
-import Snackbar from '@material-ui/core/Snackbar';
-import { SnackbarProvider, useSnackbar } from 'notistack';
-import { withSnackbar } from 'notistack';
 
 class Lenny extends Component {
     constructor(props) {
@@ -13,14 +10,9 @@ class Lenny extends Component {
             horizontal: 'center',
           };
     }
-    componentDidMount=()=>{
-        this.props.enqueueSnackbar('Kliknij na lenny face aby skopiować!',{anchorOrigin: {vertical: 'top',horizontal: 'center',}});
-    }
-    //enqueueSnackbar = useSnackbar();
+
     handleClick=()=>{
         this.copyToClipboard();
-        this.props.enqueueSnackbar('Skopiowano!',{variant: 'success',},
-        {anchorOrigin: {vertical: 'top',horizontal: 'right',}});
     }
 
     copyToClipboard = () =>{
@@ -47,5 +39,7 @@ class Lenny extends Component {
 }
 
 
-export default withSnackbar(Lenny); 
+
+
+export default Lenny; // Don’t forget to use export default!
 

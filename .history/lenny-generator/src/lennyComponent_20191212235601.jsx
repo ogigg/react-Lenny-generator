@@ -14,7 +14,7 @@ class Lenny extends Component {
           };
     }
     componentDidMount=()=>{
-        this.props.enqueueSnackbar('Kliknij na lenny face aby skopiować!',{anchorOrigin: {vertical: 'top',horizontal: 'center',}});
+        this.props.enqueueSnackbar('Skopiowano!');
     }
     //enqueueSnackbar = useSnackbar();
     handleClick=()=>{

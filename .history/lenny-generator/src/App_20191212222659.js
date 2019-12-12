@@ -20,10 +20,10 @@ class App extends Component {
     };
   }
 
-  lennyMouthList = [' ഌ',' ͜ʖ','  ͟ʖ','v',' ෴','o','_','-,-','+','*','Ꮂ','⏏','‿','‿‿','Д','ʖ̯',]
-  lennyEyesList = ['*.*',' ͡°. ͡°','°.°','ಠ.ಠ','•.•','｡•.•｡','＾.＾','^.^','ﾟ.ﾟ',' ͡€. ͡€','｡◕.◕｡']
-  lennyHandsList = ['.','\\./','-.-','>=.=<','~.~','/./','づ.づ','[̲̅$̲̅(̲̅.)̲̅$̲̅]','ᕦ.ᕥ','乁.ㄏ','٩.۶','ლ.ლ','.つ──☆*:・ﾟ','¯\\_._/¯','ᕦ.ᕤ']
-  lennyOuterList = ['.','[.]','q.p','(.)','<.>','!.!','|.|','ᔑ.ᔐ']
+  lennyMouthList = [' ഌ',' ͜ʖ','  ͟ʖ','v',' ෴','o','_','-,-','+','*']
+  lennyEyesList = ['*.*',' ͡°. ͡°','°.°','ಠ.ಠ']
+  lennyHandsList = ['.','\\./','-.-','>=.=<','~.~','/./','づ.づ']
+  lennyOuterList = ['.','[.]','q.p','(.)','<.>','!.!']
 
 
 
@@ -56,7 +56,7 @@ class App extends Component {
   render(){
   return (
     <div>
-      <SnackbarProvider maxSnack={5} anchorOrigin={{vertical: 'top',horizontal: 'right',}} autoHideDuration='800'>
+      <SnackbarProvider maxSnack={5} anchorOrigin={{vertical: 'top',horizontal: 'right',}} autoHideDuration='1000'>
       <Lenny lenny={this.state.lennyFace}/>
       </SnackbarProvider>  
       <div className="menu-wrapper">
