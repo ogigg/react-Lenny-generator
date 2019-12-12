@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-Lenny-generator/static/css/main.ad337732.chunk.css",
+    "main.js": "/react-Lenny-generator/static/js/main.52acf1d4.chunk.js",
+    "main.js.map": "/react-Lenny-generator/static/js/main.52acf1d4.chunk.js.map",
+    "runtime-main.js": "/react-Lenny-generator/static/js/runtime-main.efa121b6.js",
+    "runtime-main.js.map": "/react-Lenny-generator/static/js/runtime-main.efa121b6.js.map",
+    "static/js/2.c7b6b84d.chunk.js": "/react-Lenny-generator/static/js/2.c7b6b84d.chunk.js",
+    "static/js/2.c7b6b84d.chunk.js.map": "/react-Lenny-generator/static/js/2.c7b6b84d.chunk.js.map",
+    "index.html": "/react-Lenny-generator/index.html",
+    "precache-manifest.79c6625642c132a22f804d4d1a687eb0.js": "/react-Lenny-generator/precache-manifest.79c6625642c132a22f804d4d1a687eb0.js",
+    "service-worker.js": "/react-Lenny-generator/service-worker.js",
+    "static/css/main.ad337732.chunk.css.map": "/react-Lenny-generator/static/css/main.ad337732.chunk.css.map",
+    "static/js/2.c7b6b84d.chunk.js.LICENSE": "/react-Lenny-generator/static/js/2.c7b6b84d.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.efa121b6.js",
+    "static/js/2.c7b6b84d.chunk.js",
+    "static/css/main.ad337732.chunk.css",
+    "static/js/main.52acf1d4.chunk.js"
+  ]
+}
