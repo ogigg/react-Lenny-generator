@@ -1,12 +1,13 @@
 .menu-wrapper{
-  /* background-color: aquamarine; */
+  grid-auto-rows: 1fr;
+  background-color: aquamarine;
   height: 20vh;
   align-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 2%;
-  padding: 1% 35%;
+  padding: 2% 30%;
   text-align-last:center;
 }
 

@@ -1,13 +1,12 @@
 .menu-wrapper{
-  /* background-color: aquamarine; */
+  background-color: aquamarine;
   height: 20vh;
   align-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 2%;
-  padding: 1% 35%;
-  text-align-last:center;
+  padding: 3%;
 }
 
 .menu{
@@ -16,17 +15,10 @@
   align-items: center;
   display: flex;
 }
-.menu-label{
-  height: 100%;
-  background: red;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
 
 .select{
-  height: 100%;
   width: 100%;
-  text-align-last:center;
+  text-align-last:right;
   justify-content: center;
+  align-items: center;
 }

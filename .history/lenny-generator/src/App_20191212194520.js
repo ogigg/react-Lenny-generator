@@ -13,17 +13,16 @@ class App extends Component {
     this.state = {
       lennyFace : "( ͡° ͜ʖ ͡°)",
       lennyMouth: ' ͜ʖ',
-      lennyEyes: ' ͡°. ͡°',
-      lennyHands: '.',
-      lennyOuter: '(.)'
+      lennyEyes: [' ͡°',' ͡°'],
+      lennyHands: ['\\','/'],
+      lennyOuter: ['(',')']
     };
   }
 
   lennyMouthList = [' ഌ',' ͜ʖ','  ͟ʖ','v',' ෴','o','_','-,-','+','*']
-  lennyEyesList = ['*.*',' ͡°. ͡°','°.°','ಠ.ಠ']
-  lennyHandsList = ['.','\\./','-.-','>=.=<','~.~','/./','づ.づ']
-  lennyOuterList = ['.','[.]','q.p','(.)','<.>','!.!']
-
+  lennyEyesList = [['*','*'],[' ͡°',' ͡°'],['°','°'],['~','~'],['⩺','⩹'],['￣','￣']]
+  lennyHandsList = [['\\','/'],['-','-'],['>=','=<'],['~','~'],['/','/']]
+  lennyOuterList = [['[',']'],['q','p'],['(',')'],['<','>'],['!','!']]
 
 
   handleChange = (event) =>{
@@ -32,19 +31,19 @@ class App extends Component {
 
   updateLenny = () =>{
     this.setState({
-      lennyFace: this.state.lennyHands.split('.')[0]+
-      this.state.lennyOuter.split('.')[0]+
-      this.state.lennyEyes.split('.')[0]+
+      lennyFace: this.state.lennyHands[0] + 
+      this.state.lennyOuter[0]+
+      this.state.lennyEyes[0]+
       this.state.lennyMouth+
-      this.state.lennyEyes.split('.')[1]+
-      this.state.lennyOuter.split('.')[1]+
-      this.state.lennyHands.split('.')[1]
+      this.state.lennyEyes[1]+
+      this.state.lennyOuter[1]+
+      this.state.lennyHands[1]
     })
   }
   MenuItemList = (list) =>{
     return(
       list.map((item) =>
-      <MenuItem value={item}>
+      <MenuItem value={item.toSting()}>
         {item}
       </MenuItem>
   ));
@@ -57,16 +56,16 @@ class App extends Component {
     <div>  
       <Lenny lenny={this.state.lennyFace}/>
       <div className="menu-wrapper">
-        <Grid container spacing={1} alignItems={'center'}>
+        <Grid container spacing={3} alignItems={'center'}>
           <Grid container item spacing={3}>
-            <Grid item xs={3}>
-              <Paper className="menu-label" >Usta</Paper>
+            <Grid item xs={1}>
+              <Paper>Usta</Paper>
             </Grid>
-            <Grid item xs={9}>
+            <Grid item xs={5}>
               <Paper>
                 <Select
-                  className="select"
-                  id="lennyMouth" 
+                  // labelId="demo-customized-select-label"
+                  id="lennyMouth"
                   value={this.state.lennyMouth}
                   onChange={(event) => {this.setState({lennyMouth: event.target.value},this.updateLenny);}}
                 >
@@ -76,13 +75,13 @@ class App extends Component {
             </Grid>
           </Grid>
           <Grid container item spacing={3}>
-            <Grid item xs={3}>
-              <Paper className="menu-label" >Oczy</Paper>
+            <Grid item xs={1}>
+              <Paper>Oczy</Paper>
             </Grid>
-            <Grid item xs={9}>
+            <Grid item xs={5}>
               <Paper>
                 <Select
-                  className="select"
+                  // labelId="demo-customized-select-label"
                   id="lennyEyes"
                   value={this.state.lennyEyes}
                   onChange={(event) => {this.setState({lennyEyes: event.target.value},this.updateLenny);}}
@@ -93,13 +92,12 @@ class App extends Component {
             </Grid>
           </Grid>
           <Grid container item spacing={3}>
-            <Grid item xs={3}>
-              <Paper className="menu-label">Uszy</Paper>
+            <Grid item xs={1}>
+              <Paper>Uszy</Paper>
             </Grid>
-            <Grid item xs={9}>
+            <Grid item xs={5}>
               <Paper>
                 <Select
-                  className="select"
                   id="lennyOuter"
                   value={this.state.lennyOuter}
                   onChange={(event) => {this.setState({lennyOuter: event.target.value},this.updateLenny);}}
@@ -110,13 +108,13 @@ class App extends Component {
             </Grid>
           </Grid>
           <Grid container item spacing={3}>
-            <Grid item xs={3}>
-              <Paper className="menu-label">Ręce</Paper>
+            <Grid item xs={1}>
+              <Paper>Ręce</Paper>
             </Grid>
-            <Grid item xs={9}>
+            <Grid item xs={5}>
               <Paper>
                 <Select
-                  className="select"
+                  // labelId="demo-customized-select-label"
                   id="lennyHands"
                   value={this.state.lennyHands}
                   onChange={(event) => {this.setState({lennyHands: event.target.value},this.updateLenny);}}

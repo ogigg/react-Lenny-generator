@@ -13,7 +13,7 @@ class App extends Component {
     this.state = {
       lennyFace : "( ͡° ͜ʖ ͡°)",
       lennyMouth: ' ͜ʖ',
-      lennyEyes: ' ͡°. ͡°',
+      lennyEyes: '*.*',
       lennyHands: '.',
       lennyOuter: '(.)'
     };
@@ -22,7 +22,7 @@ class App extends Component {
   lennyMouthList = [' ഌ',' ͜ʖ','  ͟ʖ','v',' ෴','o','_','-,-','+','*']
   lennyEyesList = ['*.*',' ͡°. ͡°','°.°','ಠ.ಠ']
   lennyHandsList = ['.','\\./','-.-','>=.=<','~.~','/./','づ.づ']
-  lennyOuterList = ['.','[.]','q.p','(.)','<.>','!.!']
+  lennyOuterList = ['[.]','q.p','(.)','<.>','!.!']
 
 
 

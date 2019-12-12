@@ -13,7 +13,7 @@ class App extends Component {
     this.state = {
       lennyFace : "( ͡° ͜ʖ ͡°)",
       lennyMouth: ' ͜ʖ',
-      lennyEyes: ' ͡°. ͡°',
+      lennyEyes: '*.*',
       lennyHands: '.',
       lennyOuter: '(.)'
     };
@@ -22,7 +22,7 @@ class App extends Component {
   lennyMouthList = [' ഌ',' ͜ʖ','  ͟ʖ','v',' ෴','o','_','-,-','+','*']
   lennyEyesList = ['*.*',' ͡°. ͡°','°.°','ಠ.ಠ']
   lennyHandsList = ['.','\\./','-.-','>=.=<','~.~','/./','づ.づ']
-  lennyOuterList = ['.','[.]','q.p','(.)','<.>','!.!']
+  lennyOuterList = ['[.]','q.p','(.)','<.>','!.!']
 
 
 
@@ -57,10 +57,10 @@ class App extends Component {
     <div>  
       <Lenny lenny={this.state.lennyFace}/>
       <div className="menu-wrapper">
-        <Grid container spacing={1} alignItems={'center'}>
+        <Grid container spacing={3} alignItems={'center'}>
           <Grid container item spacing={3}>
             <Grid item xs={3}>
-              <Paper className="menu-label" >Usta</Paper>
+              <Paper className="menu-label" >Ustaa</Paper>
             </Grid>
             <Grid item xs={9}>
               <Paper>

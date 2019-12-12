@@ -1,5 +1,6 @@
 .menu-wrapper{
-  /* background-color: aquamarine; */
+  grid-auto-rows: 1fr;
+  background-color: aquamarine;
   height: 20vh;
   align-self: center;
   display: flex;

@@ -13,16 +13,16 @@ class App extends Component {
     this.state = {
       lennyFace : "( ͡° ͜ʖ ͡°)",
       lennyMouth: ' ͜ʖ',
-      lennyEyes: ' ͡°. ͡°',
+      lennyEyes: '*.*',
       lennyHands: '.',
       lennyOuter: '(.)'
     };
   }
 
   lennyMouthList = [' ഌ',' ͜ʖ','  ͟ʖ','v',' ෴','o','_','-,-','+','*']
-  lennyEyesList = ['*.*',' ͡°. ͡°','°.°','ಠ.ಠ']
+  lennyEyesList = ['*.*',' ͡°. ͡°','°.°']
   lennyHandsList = ['.','\\./','-.-','>=.=<','~.~','/./','づ.づ']
-  lennyOuterList = ['.','[.]','q.p','(.)','<.>','!.!']
+  lennyOuterList = ['[.]','q.p','(.)','<.>','!.!']
 
 
 
@@ -57,16 +57,16 @@ class App extends Component {
     <div>  
       <Lenny lenny={this.state.lennyFace}/>
       <div className="menu-wrapper">
-        <Grid container spacing={1} alignItems={'center'}>
+        <Grid container spacing={3} alignItems={'center'}>
           <Grid container item spacing={3}>
-            <Grid item xs={3}>
-              <Paper className="menu-label" >Usta</Paper>
+            <Grid item xs={1}>
+              <Paper>Usta</Paper>
             </Grid>
-            <Grid item xs={9}>
+            <Grid item xs={3}>
               <Paper>
                 <Select
                   className="select"
-                  id="lennyMouth" 
+                  id="lennyMouth" autoWidth='true'
                   value={this.state.lennyMouth}
                   onChange={(event) => {this.setState({lennyMouth: event.target.value},this.updateLenny);}}
                 >
@@ -76,10 +76,10 @@ class App extends Component {
             </Grid>
           </Grid>
           <Grid container item spacing={3}>
-            <Grid item xs={3}>
-              <Paper className="menu-label" >Oczy</Paper>
+            <Grid item xs={1}>
+              <Paper >Oczy</Paper>
             </Grid>
-            <Grid item xs={9}>
+            <Grid item xs={3}>
               <Paper>
                 <Select
                   className="select"
@@ -93,10 +93,10 @@ class App extends Component {
             </Grid>
           </Grid>
           <Grid container item spacing={3}>
-            <Grid item xs={3}>
-              <Paper className="menu-label">Uszy</Paper>
+            <Grid item xs={1}>
+              <Paper>Uszy</Paper>
             </Grid>
-            <Grid item xs={9}>
+            <Grid item xs={3}>
               <Paper>
                 <Select
                   className="select"
@@ -110,10 +110,10 @@ class App extends Component {
             </Grid>
           </Grid>
           <Grid container item spacing={3}>
-            <Grid item xs={3}>
-              <Paper className="menu-label">Ręce</Paper>
+            <Grid item xs={1}>
+              <Paper>Ręce</Paper>
             </Grid>
-            <Grid item xs={9}>
+            <Grid item xs={3}>
               <Paper>
                 <Select
                   className="select"
