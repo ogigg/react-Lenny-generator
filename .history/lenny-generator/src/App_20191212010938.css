@@ -1,0 +1,6 @@
+.menu-wrapper{
+  background-color: aquamarine;
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+}
