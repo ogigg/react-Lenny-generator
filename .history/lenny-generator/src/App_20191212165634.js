@@ -10,11 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lennyFace : "( ͡° ͜ʖ ͡°)",
-      lennyMouth: ' ͜ʖ',
-      lennyEyes: [' ͡°',' ͡°'],
-      lennyHands: ['\\','/'],
-      lennyOuter: ['(',')']
+      lennyFace : "( ͡° ͜ʖ ͡°)"
     };
   }
   render(){
@@ -28,7 +24,7 @@ class App extends Component {
               <Paper>Usta</Paper>
             </Grid>
             <Grid item xs={5}>
-              <Paper>Usta</Paper>
+              <Paper>ddd</Paper>
             </Grid>
           </Grid>
           <Grid container item spacing={3}>
@@ -36,7 +32,7 @@ class App extends Component {
               <Paper>Oczy</Paper>
             </Grid>
             <Grid item xs={5}>
-              <Paper>Oczy</Paper>
+              <Paper>ddd</Paper>
             </Grid>
           </Grid>
           <Grid container item spacing={3}>
@@ -44,7 +40,7 @@ class App extends Component {
               <Paper>Uszy</Paper>
             </Grid>
             <Grid item xs={5}>
-              <Paper>Uszy</Paper>
+              <Paper>ddd</Paper>
             </Grid>
           </Grid>
           <Grid container item spacing={3}>
@@ -52,7 +48,7 @@ class App extends Component {
               <Paper>Ręce</Paper>
             </Grid>
             <Grid item xs={5}>
-              <Paper>Ręce</Paper>
+              <Paper>ddd</Paper>
             </Grid>
           </Grid>
         </Grid> 

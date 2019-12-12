@@ -1,0 +1,15 @@
+.lenny{
+    font-size: 100px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,181,93,1) 45%, rgba(0,110,133,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.lenny-wrapper{
+    display: flex;
+    justify-content: center;
+}

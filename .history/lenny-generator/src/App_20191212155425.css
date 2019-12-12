@@ -1,17 +1,10 @@
 .menu-wrapper{
   background-color: aquamarine;
   height: 20vh;
+  width: 100vw;
   align-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2%;
-  padding: 3%;
-}
-
-.menu{
-  background-color: red;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  padding: 10%;
 }
