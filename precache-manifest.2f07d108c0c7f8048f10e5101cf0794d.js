@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "52b56c15fe8dc67dcaaefb9bd6cd9bf2",
+    "revision": "62a231a470a58b34e0c9331b69fdac7f",
     "url": "/react-Lenny-generator/index.html"
   },
   {
-    "revision": "505636a6702e7288b2cd",
+    "revision": "e7a6f8755725e5a9164f",
     "url": "/react-Lenny-generator/static/css/main.517113ae.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-Lenny-generator/static/js/2.c7b6b84d.chunk.js.LICENSE"
   },
   {
-    "revision": "505636a6702e7288b2cd",
-    "url": "/react-Lenny-generator/static/js/main.70988ebe.chunk.js"
+    "revision": "e7a6f8755725e5a9164f",
+    "url": "/react-Lenny-generator/static/js/main.52acf1d4.chunk.js"
   },
   {
     "revision": "3ce41bdf14a89d9ec55c",
