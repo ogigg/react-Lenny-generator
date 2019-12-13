@@ -25,7 +25,9 @@ class App extends Component {
   lennyHandsList = ['.','\\./','-.-','>=.=<','~.~','/./','づ.づ','[̲̅$̲̅(̲̅.)̲̅$̲̅]','ᕦ.ᕥ','乁.ㄏ','٩.۶','ლ.ლ','.つ──☆*:・ﾟ','¯\\_._/¯','ᕦ.ᕤ']
   lennyOuterList = ['.','[.]','q.p','(.)','<.>','!.!','|.|','ᔑ.ᔐ']
 
-
+  componentWillMount(){
+    document.title = "( ͡° ͜ʖ ͡°) Lenny Face Generator "
+  }
 
   handleChange = (event) =>{
     this.setState({lennyMouth: event.target.value},this.updateLenny);
@@ -62,8 +64,8 @@ class App extends Component {
       <div className="menu-wrapper">
         <Grid container spacing={1} alignItems={'center'}>
           <Grid container item spacing={1}>
-            <Grid item xs={3}>
-              <Paper className="menu-label" >Usta</Paper>
+            <Grid item xs={3} zeroMinWidth>
+              <Paper className="menu-label"  >Usta</Paper>
             </Grid>
             <Grid item xs={9}>
               <Paper>

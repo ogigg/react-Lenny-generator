@@ -1,12 +1,12 @@
 .menu-wrapper{
-  /* background-color: aquamarine; */
-  height: 20vh;
+  /* background-color: aquamarine;  */
+  /* max-width: 1500px; */
   align-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 2%;
-  padding: 1% 35%;
+  padding: 1% 30%;
   text-align-last:center;
 }
 
@@ -16,6 +16,7 @@
   display: flex;
 }
 .menu-label{
+  /* min-width: 20px; */
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -28,3 +29,4 @@
   text-align-last:center;
   justify-content: center;
 }
+
