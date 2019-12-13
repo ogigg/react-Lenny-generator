@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-Lenny-generator/precache-manifest.2f07d108c0c7f8048f10e5101cf0794d.js"
+  "/react-Lenny-generator/precache-manifest.32d4378cdac81305539e270ca0c117fc.js"
 );
 
 self.addEventListener('message', (event) => {
