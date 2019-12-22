@@ -7,6 +7,8 @@ import Grid from '@material-ui/core/Grid';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import { SnackbarProvider, useSnackbar } from 'notistack';
+import GitHubButton from 'react-github-btn'
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 
 class App extends Component {
   constructor(props) {
@@ -57,7 +59,7 @@ class App extends Component {
 
   render(){
   return (
-    <div>
+    <div >
       <SnackbarProvider maxSnack={5} anchorOrigin={{vertical: 'top',horizontal: 'right',}} autoHideDuration='800'>
       <Lenny lenny={this.state.lennyFace}/>
       </SnackbarProvider>  
@@ -131,9 +133,18 @@ class App extends Component {
               </Paper>
             </Grid>
           </Grid>
-        </Grid> 
+        </Grid>
+
       </div>
-      
+      <div className="footer">
+        <Button href="http://ogig.me" variant="outlined"  >
+          my page
+        </Button>
+        <Button href="https://github.com/ogigg/react-Lenny-generator" variant="outlined">
+          View on GitHub
+        </Button>
+
+      </div>
     </div>
 
   );

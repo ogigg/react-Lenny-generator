@@ -1,3 +1,5 @@
+
+
 .menu-wrapper{
   /* background-color: aquamarine;  */
   /* max-width: 1500px; */
@@ -21,6 +23,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  overflow: hidden;
 }
 
 .select{
@@ -30,3 +33,8 @@
   justify-content: center;
 }
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
